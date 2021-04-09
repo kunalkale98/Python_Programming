@@ -1,0 +1,6 @@
+2021-04-09 14:51:29,485:Gambler.py:INFO:Gambler Won
+2021-04-09 14:51:29,488:Gambler.py:INFO:The gambler won 63 bets
+2021-04-09 14:51:29,488:Gambler.py:INFO:The gambler lost 53 bets
+2021-04-09 14:51:29,488:Gambler.py:INFO:Win Precentage:54.310344827586206
+2021-04-09 14:51:29,488:Gambler.py:INFO:Lost Percentage:45.689655172413794
+2021-04-09 14:52:07,711:Gambler.py:ERROR:Invalid Input
