@@ -4,11 +4,11 @@
 # until he/she goes broke or reach goal
 
 import logging
+import logs
 import random
 
 #To Create logs of the program when run, in a particular format
-logging.basicConfig(filename='test.log',level=logging.DEBUG,
-                    format='%(asctime)s:%(filename)s:%(levelname)s:%(message)s')
+logger = logs.set_logger()
 
 #Function for gambling with stake and goal as two parameters
 def gambling(stake,goal):
@@ -22,17 +22,17 @@ def gambling(stake,goal):
         else:
             stake-=1
     if(stake == goal):
-        logging.info("Gambler Won")
+        logger.info("Gambler Won")
     else:
-        logging.info("Gambler Lost")
+        logger.info("Gambler Lost")
     
     lost = bets - win
-    logging.info(f"The gambler won {win} bets")
-    logging.info(f"The gambler lost {lost} bets")
+    logger.info(f"The gambler won {win} bets")
+    logger.info(f"The gambler lost {lost} bets")
     winPercent = win/bets*100
     lostPercent = 100 - winPercent
-    logging.info(f"Win Precentage:{winPercent}")
-    logging.info(f"Lost Percentage:{lostPercent}")
+    logger.info(f"Win Precentage:{winPercent}")
+    logger.info(f"Lost Percentage:{lostPercent}")
 
 #Function for User Input
 def user_input():
@@ -41,7 +41,7 @@ def user_input():
         goal = int(input("Enter Goal to achieve: "))
         return stake,goal
     except Exception:
-        logging.error("Invalid Input")
+        logger.error("Invalid Input")
 
 #Driver Class
 stake,goal = user_input()
