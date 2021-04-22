@@ -1,0 +1,14 @@
+{
+  "employee": [
+    {
+      "name": "Rohit",
+      "email": "rohit@gmail.com",
+      "city": "Mumbai"
+    },
+    {
+      "name": "Virat",
+      "email": "virat@gmail.com",
+      "city": "Delhi"
+    }
+  ]
+}
